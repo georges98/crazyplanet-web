@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <title>Crazy Planet</title>
+      <link rel="icon" 
+      type="image/png" 
+      href="/images/logo.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;900&display=swap" rel="stylesheet">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+     <style>
+     body{margin:0;height:100vh;overflow:hidden;}
+     h1{
+         font-family: 'Spartan', sans-serif;
+         color:white;
+         font-size:5em;
+         font-weight:700;
+         margin: 0px;
+     }
+     .box{
+             position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+                width: 30%;
+     }
+     .br{
+         height:5px;
+         background: white;
+         width:30%;
+     }
+     .text{
+         font-family: 'Spartan', sans-serif;
+         color:white;
+         font-size:2em;
+         font-weight:100;
+     }
+     .google{
+         width:200px;
+     }
+     .ios{
+          width:200px;
+          padding-left:20px;
+     }
+     .d-flex{
+         display:flex;
+     }
+     iframe{
+         position: absolute;
+         bottom:20px;
+         right:20px;
+         border:none;
+         border-radius:5px;
+     }
+     .info{
+          position: absolute;
+          top:20px;
+          right:20px;
+     }
+     
+     
+     .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Spartan', sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: 'Spartan', sans-serif;
+}
+     
+     @media(max-width:978px)
+     {
+          h1{
+             font-size:3em;
+         }
+         .text{
+         font-size:1.2em;
+        }
+         .google{
+        width:100%;
+         }
+         .ios{
+              width:100%;
+              padding-left:10px;
+         }
+        
+         .atag{
+             width:50%;
+         }
+         iframe{
+                 width: 350px;
+                 height: 150px;
+         }
+         .popup{
+            width: 70%;
+          }
+     }
+     @media(max-width:658px)
+     {
+         .box{
+                 top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+         }
+     }
+     @media(max-width:500px)
+     {
+         .box{
+               top: 15%;
+                left: 10%;
+                width: 80%;
+                transform: initial;
+         }
+         
+          iframe{
+             bottom:2%;
+             right:10%;
+             width:80%;
+         }
+       
+     }
+     
+     
+     
+     .blob {
+background: black;
+border-radius: 50%;
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+margin: 10px;
+height: 40px;
+width: 40px;
+transform: scale(1);
+animation: pulse-black 2s infinite;
+}
+
+
+
+.blob.white {
+background: white;
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+0% {
+transform: scale(0.95);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+}
+
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+}
+
+100% {
+transform: scale(0.95);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+}
+
+
+
+     </style>
+    </head>
+    <body>
+    
+    <div style="background: url('/images/bg.jpg') center;background-repeat: no-repeat;background-size: cover;height: 100%;filter: blur(0.4rem); -webkit-filter: blur(0.4rem);"></div>
+        <div class="box">
+            <div style="overflow:hidden"><h1 class="animate__animated animate__slideInUp">CRAZY PLANET™</h1></div>
+            <div class="br"></div>
+            <div style="overflow:hidden"><p class="text animate__animated animate__slideInDown">AVAILABLE NOW ON THE APPSTORE AND GOOGLE PLAY</p></div>
+            <div class="d-flex">
+                <a href="https://play.google.com/store/apps/details?id=com.in2uitions.crazyplanet" class="atag" target="_blank"><img class="google" src="/images/google-play-badge.png" /></a>
+                <a href="https://apps.apple.com/us/app/crazy-planet-cp/id1536424387" class="atag"  target="_blank"><img class="ios" src="/images/1200px-Download_on_the_App_Store_Badge.svg.png" /></a>
+            </div>
+            
+            
+            
+        </div>
+        <iframe width="420" height="195"
+            src="https://www.youtube.com/embed/4oHhs9M9DWM">
+            </iframe>
+        <a class="info" href="#popup1">
+            <div class="blob white">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	  viewBox="0 0 45.999 45.999" style="enable-background:new 0 0 45.999 45.999;"
+            	 xml:space="preserve">
+            		<path d="M39.264,6.736c-8.982-8.981-23.545-8.982-32.528,0c-8.982,8.982-8.981,23.545,0,32.528c8.982,8.98,23.545,8.981,32.528,0
+            			C48.245,30.281,48.244,15.719,39.264,6.736z M25.999,33c0,1.657-1.343,3-3,3s-3-1.343-3-3V21c0-1.657,1.343-3,3-3s3,1.343,3,3V33z
+            			 M22.946,15.872c-1.728,0-2.88-1.224-2.844-2.735c-0.036-1.584,1.116-2.771,2.879-2.771c1.764,0,2.88,1.188,2.917,2.771
+            			C25.897,14.648,24.746,15.872,22.946,15.872z"/>
+            </svg>
+            </div>
+        </a>
+        <div id="popup1" class="overlay">
+        	<div class="popup">
+        		<h2>Tutorial</h2>
+        		<a class="close" href="#">&times;</a>
+        		<div class="content">
+        			Crazy Planet is an Action game that let you explore different planets.
+                    The player objective is to survive in a chaotic planet, where the user might face different obstacles like houses, trees and even METEORS!!
+                    The Player can shoot rockets to eliminate Obstacles and earn points.
+                    But be aware that each rocket failing to hit a target will always be hovering over the planet and might even hit the player himself !!
+        		</div>
+        	</div>
+        </div>
+    
+  
+    </body>
+    </html>
+      
